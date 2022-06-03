@@ -1,0 +1,19 @@
+Project Fresh Garden
+1. Header
+ 1. logo
+ 2. nav
+ 3. nsContact-nav
+ 4. contact-nav
+2. Slider
+ 1. slider-btn
+ 2. show-more
+3. Content
+ 1.oustanding-product
+ 2.product
+ 3.fgStory
+ 4.memberCard 
+ 5.service
+ 6.news
+ 7.feedback
+4. footer
+
