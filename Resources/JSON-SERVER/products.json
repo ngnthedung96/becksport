@@ -1,0 +1,40 @@
+{
+  "best-seller": [
+    {
+      "id": 1,
+      "name": "BÁNH MÌ NƯỚNG BƠ TỎI",
+      "price": "11,782đ",
+      "link": "https://product.hstatic.net/200000411281/product/9_1cc15e71b97d405bbef69f4c166c44d7_grande.jpg"
+    },
+    {
+      "id": 2,
+      "name": "BÁNH MÌ NƯỚNG SỐT PIZZA",
+      "price": "11,782đ",
+      "link": "https://product.hstatic.net/200000411281/product/8_1dd4f612ca7840b5bfae8020068bd24f_grande.jpg"
+    },
+    {
+      "id": 3,
+      "name": "BÁNH MÌ NƯỚNG CARAMEN",
+      "price": "11,782đ",
+      "link": "https://product.hstatic.net/200000411281/product/2_862efa1275f7462c9e2680575e45da5f_grande.jpg"
+    },
+    {
+      "id": 4,
+      "name": "PIZZA BÒ BULGOGI",
+      "price": "11,782đ",
+      "link": "https://product.hstatic.net/200000411281/product/25_4c7f7b96dd63433ea7b2154503f02ad1_grande.jpg"
+    },
+    {
+      "id": 5,
+      "name": "BÁNH MÌ NƯỚNG PHÔ MAI QUE",
+      "price": "11,782đ",
+      "link": "https://product.hstatic.net/200000411281/product/3_fdd1265100174cc3a112fde516b5204c_grande.jpg"
+    },
+    {
+      "id": 6,
+      "name": "PIZZA GÀ TERIYAKY",
+      "price": "11,782đ",
+      "link": "https://product.hstatic.net/200000411281/product/27_042524a63c304692a3491930750d6107_grande.jpg"
+    }
+  ]
+}
