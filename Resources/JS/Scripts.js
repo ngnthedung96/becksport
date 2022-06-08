@@ -84,3 +84,19 @@ GetProductsFromApi(productsApi)
     }
 })
 // ---------cart-shopping-------------------------
+var cartShoppingBtn = document.querySelector('.header-nav__btn.cart-shopping')
+var cartHeaderContainer = document.querySelector('.header-nav__cart-container')
+var cartHeaderContent = document.querySelector('.header-nav__cart')
+
+function showCartHeader () {
+    cartHeaderContainer.classList.add('open')
+}
+function hideCartHeader () {
+    cartHeaderContainer.classList.remove('open')
+}
+
+cartShoppingBtn.addEventListener('click',showCartHeader)
+cartHeaderContainer.addEventListener('click',hideCartHeader)
+cartHeaderContent.addEventListener('click',function(e){
+    e.stopPropagation()
+})
