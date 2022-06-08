@@ -33,87 +33,18 @@ catSubNavBtn.addEventListener('click',rotateBtn)
 
 var productHeaderNav = document.querySelectorAll('.products-header__nav a')
 var productContentItems = document.querySelectorAll(".js-products-content__item")
-function ShowProduct() {
-    this.classList.add('open')
-}
-function HideProduct() {
-    this.classList.remove('open')
-}
-// for (i of productHeaderNav) {
-//     i.addEventListener('click', function(){
-//         for( j of productContentItems) {
-//             if (j.classList.contains(i.classList)){
-//                 for(q of productHeaderNav){
-//                     if(q.classList.contains('colorGreen')){
-//                         q.classList.remove('colorGreen')
-//                     }
-//                 }
-//                 i.classList.add('colorGreen')
-//                 for (k of productContentItems){
-//                     if (k.classList.contains('open')){
-//                         k.classList.remove('open')
-//                     }
-//                 }
-//                 j.classList.add('open')
-//             }
-//         }
-//     })
-// }
-var bestSellerBtn = document.querySelector(".best-seller")
-var newProductsBtn = document.querySelector(".new-products")
-var salesBtn = document.querySelector(".sales")
+productHeaderNav.forEach(function(btn,index){
+    btn.addEventListener('click', function(){
+        var a = document.querySelector('.products-header__nav a.colorGreen')
+        a.classList.remove('colorGreen')
+        this.classList.add('colorGreen')
+        var c = document.querySelector(".js-products-content__item.open")
+        c.classList.remove('open')
+        var b = productContentItems[index]
+        b.classList.add('open')
+})})
 
-var bestSellerDiv = document.querySelector(".js-products-content__item.best-seller")
-var newProductsDiv = document.querySelector(".js-products-content__item.new-products")
-var salesDiv = document.querySelector(".js-products-content__item.sales")
 
-bestSellerBtn.addEventListener("click", function(){
-    for (value of productContentItems){
-        if (value.classList.contains('open')){
-            value.classList.remove('open')
-        }
-    }
-    for(q of productHeaderNav){
-        if(q.classList.contains('colorGreen')){
-            q.classList.remove('colorGreen')
-        }
-    }
-    bestSellerBtn.classList.add('colorGreen')
-    bestSellerDiv.classList.add("open")
-})
-newProductsBtn.addEventListener("click", function(){
-    for (value of productContentItems){
-        if (value.classList.contains('open')){
-            value.classList.remove('open')
-        }
-    }
-    for(q of productHeaderNav){
-        if(q.classList.contains('colorGreen')){
-            q.classList.remove('colorGreen')
-        }
-    }
-    newProductsBtn.classList.add('colorGreen')
-    newProductsDiv.classList.add("open")
-})
-salesBtn.addEventListener("click", function(){
-    for (value of productContentItems){
-        if (value.classList.contains('open')){
-            value.classList.remove('open')
-        }
-    }
-    for (value of productContentItems){
-        if (value.classList.contains('open')){
-            value.classList.remove('open')
-        }
-    }
-    for(q of productHeaderNav){
-        if(q.classList.contains('colorGreen')){
-            q.classList.remove('colorGreen')
-        }
-    }
-    salesBtn.classList.add('colorGreen')
-    salesDiv.classList.add("open")
-})
 // ----------------------------Get Product Form API-------------------
 
 var productsApi = "http://localhost:3000/best-seller"
@@ -152,3 +83,4 @@ GetProductsFromApi(productsApi)
         }
     }
 })
+// ---------cart-shopping-------------------------
