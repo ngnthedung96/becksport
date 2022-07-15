@@ -1,0 +1,20 @@
+@mixin absoluteCenter($direction) {
+    position: absolute;
+    @if $direction == 'left' {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @if $direction == 'top' {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+@mixin bgc($bgcolor: red) {
+    background-color: $bgcolor;
+}
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+$colorRed: red;
+$colorBlue: blue;

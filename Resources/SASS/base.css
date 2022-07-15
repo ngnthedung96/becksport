@@ -1,0 +1,30 @@
+/* -------Animation-------- */
+
+/* ......reusablbe component............ */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;}
+
+.flex{
+    display: flex;
+}
+.open{
+    display: block !important;
+}
+.btn{
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.black{
+    background-color: black;
+}

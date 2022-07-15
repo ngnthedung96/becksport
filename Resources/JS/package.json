@@ -1,0 +1,32 @@
+{
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "beautiful": "prettier --single-quote --tab-width 4 --trailing-comma all --write \"../**/*.{js,json,scss}\"",
+        "start": "nodemon --inspect index.js",
+        "watch": "sass ../SASS/style.scss ../SASS/main.css --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ngnthedung96/FreshGarden.git"
+    },
+    "author": "nguyen the dung",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ngnthedung96/FreshGarden/issues"
+    },
+    "homepage": "https://github.com/ngnthedung96/FreshGarden#readme",
+    "dependencies": {
+        "express": "^4.18.1",
+        "express-handlebars": "^6.0.6",
+        "mongoose": "^6.4.4"
+    },
+    "devDependencies": {
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.19",
+        "prettier": "^2.7.1"
+    }
+}
